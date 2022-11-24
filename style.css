@@ -1,0 +1,74 @@
+:root{
+    --primary-color:#8c4966;
+    --secundary-color: #d8c3c3;
+    --mobile-color:#C82A54;
+    --table-color:#FF689D; 
+    --computer-color:#E69DFB;
+    --other-color:#d352d3; 
+    --header-size: 4rem;
+    --white: #fff;
+    --lg: 5rem;
+    --md: 3rem;
+    --sm: 1.4rem;
+} 
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+header > h3 {
+    font-size: var(--md);
+    color: var(--white);
+    text-align: center; 
+    padding: 25px 0px 0px 0px;
+}
+main{
+    width: 100vw;
+    height: 70vh;
+    font-size: 1.8rem;
+}
+main > h3{
+    font-size: 3rem;
+}
+h1{
+    font-size: 4rem;
+    color: var(--other-color);
+}
+footer{
+    width: 100%;
+    height: 5vh;
+    background-color: var(--primary-color);
+}
+
+@media (min-width: 480px) {
+    header{
+     background-color: var(--mobile-color);
+}
+    footer{
+        background-color: var(--mobile-color);
+    }
+}
+@media (min-width:768px) {
+    header{
+        background-color: var(--table-color);
+   }
+    footer{
+        background-color: var(--table-color);
+    }
+}
+@media (min-width:1024px) {
+    header{
+        background-color: var(--computer-color);
+   }
+    footer{
+        background-color: var(--computer-color);
+    }
+}
